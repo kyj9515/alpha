@@ -1,5 +1,5 @@
 .perspective {
-/*  	border: 10px solid green; */
+/* 	border: 10px solid green; */
  	display: inline-block;
 	margin: 0px 0px 0px 0px;
 	
@@ -7,7 +7,7 @@
 }
 
 .cube {
-/* 	border: 10px solid blue; */
+	border: 10px solid blue;
  	display: inline-block;
 	
    	transform-style: preserve-3d;
@@ -31,7 +31,7 @@
 	left: 0px;
 	
 	opacity: 0.3;
- 	box-shadow: 0px 0px 10px hotpink;
+	box-shadow: 0px 0px 5px 5px hotpink;
 }
 
 .front {
