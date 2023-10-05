@@ -8,7 +8,6 @@
 <title>cross.jsp</title>
 <style type="text/css">
 body {
-	background-image: url('/media/alpha.png'), url('/media/small.png');
 }
 
 #surface {

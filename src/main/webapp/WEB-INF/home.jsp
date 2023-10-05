@@ -12,35 +12,43 @@
 .menu {
 	display: flex;
 	list-style: none;
-	
 	align-items: flex-start;
 	
+	
 	position: fixed;
-	width: 95%;
-	top: 10px;
-	left: 10px;
+	width: 100%;
+	top: -16px;
+	left: -10px;
+	background: white;
+	height: 100px;
+	border-bottom: 3px solid black;
 }
 
 .menu-item {
 /* 	min-width: 150px; */
-	width: 150px;
+	margin-top: 20px;
+	
+	width: 220px;
 	flex-shrink: 0;
-	background: orange;
+	background: black;
+	color: white;
+	text-align: center;
+	border: 1px solid gray;
 }
 
 .menu-item:hover > .menu-title {
-	text-shadow: 10px 10px 5px red;
+	text-shadow: 10px 10px 5px white;
+	color: white;
 }
 
 .menu-item:hover > .sub-menu {
 	max-height: 300px;
-	
-	transition: max-height 2s;
+	transition: max-height 1s;
 }
 
 .menu-item:last-child {
 	margin-left: auto;
-	margin-right: 10px;
+	margin-right: 50px;
 }
 
 .menu-title {
@@ -64,16 +72,24 @@
 	padding: 10px;
 	font-size: 12pt;
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 .sub-menu-item:hover > a {
-	background: red;
+	background: #D8D8D8;
+	color: black;
+	text-shadow: 10px 10px 5px black;
 }
 
 iframe {
 	margin-top: 100px;
 }
+
+body {
+	background: url("/media/cat.jpg") no-repeat center;
+	background-size: cover;
+}
+
 
 </style>
 <script type="text/javascript">
@@ -90,7 +106,7 @@ window.onload = function() {
 <body>
 <nav>
 <ul class="menu">
-	<li style="padding: 0px 20px;">
+	<li style="padding: 0px 20px; margin-top: 20px;">
 		<section class="perspective">
 		<article class="cube">
 			<div class="base">Base</div>
@@ -152,7 +168,6 @@ window.onload = function() {
 	</li>
 </ul>
 </nav>
-<hr>
 <iframe src="/alpha/fill" 
 		 name="content" 
 		 width="100%"
