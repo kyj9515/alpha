@@ -88,5 +88,10 @@ public class AniController {
 	Alpha cube() {
 		return new Alpha();
 	}
+	
+	@GetMapping("/placeholder")
+	Alpha placeholder() {
+		return new Alpha();
+	}
 
 }
