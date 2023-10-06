@@ -28,7 +28,7 @@
 /* 	min-width: 150px; */
 	margin-top: 20px;
 	
-	width: 220px;
+	width: 270px;
 	flex-shrink: 0;
 	background: black;
 	color: white;
