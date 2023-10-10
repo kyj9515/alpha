@@ -8,10 +8,10 @@
 <title>list.jsp</title>
 </head>
 <body>
-<h1>Emp List</h1>
+<h1 style="color: white;">Emp List</h1>
 <hr>
 <form action="/emp/list">
-	<label>부서 선택</label>
+	<label style="color: white;">부서 선택</label>
 	<select name="deptno">
 			<c:choose>
 			<c:when test="${empty param.deptno}">
@@ -36,7 +36,7 @@
 	<input type="submit" value="직원검색">
 </form>
 <hr>
-<table border="1" width="800">
+<table border="1" width="800" style="background-color: white;">
 	<thead>
 		<tr>
 			<th>empno</th>

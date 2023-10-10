@@ -40,7 +40,7 @@ window.onload = function() {
 <input type="submit" value="도시검색">
 </form>
 <hr>
-<table border="1">
+<table border="1" style="background: white;">
 	<thead>
 		<tr>
 			<th>no</th>

@@ -12,7 +12,7 @@
 	padding: 10px;
 
 #heading {
-	color: red;
+	color: black;
 }
 
 td {
@@ -110,7 +110,7 @@ window.onload = function() {
 <input type="submit" value="조회">
 </form>
 <hr>
-<table border="1">
+<table border="1" style="background: white;">
 	<thead>
 		<tr>
 			<th>no</th>

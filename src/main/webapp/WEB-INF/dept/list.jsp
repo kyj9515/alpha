@@ -8,14 +8,14 @@
 <title>list.jsp</title>
 </head>
 <body>
-<h1>Dept List</h1>
+<h1 style="color: white;">Dept List</h1>
 <hr>
 <form action="/dept/list">
 	<input type="text" name="search">
 	<input type="submit" value="부서검색">
 </form>
 <hr>
-<table border="1" width="500">
+<table border="1" width="500" style="background: white;">
 	<thead>
 		<tr>
 			<th>deptno</th>
