@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="/css/cube.css">
 <style type="text/css">
 
+
+
 .menu {
 	display: flex;
 	list-style: none;
@@ -21,13 +23,13 @@
 	left: -10px;
 	background: white;
 	height: 100px;
-	border-bottom: 3px solid black;
+/* 	border-bottom: 3px solid black; */
 }
 
 .menu-item {
 /* 	min-width: 150px; */
 	margin-top: 20px;
-	
+	opacity: 0.75;
 	width: 270px;
 	flex-shrink: 0;
 	background: black;
