@@ -176,7 +176,7 @@ $(document).ready(function() {
 </nav>
 <iframe src="/alpha/fill" 
 		 name="content" 
-		 width="100%"
+		 width="105%"
 		 scrolling="no"
 		 frameborder='0'
 		 sendbox="allow-same-origin"
