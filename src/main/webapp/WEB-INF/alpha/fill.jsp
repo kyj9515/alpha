@@ -52,7 +52,7 @@ function startBtn_click(e) {
 			
 			let td = surface.rows[alpha.line-1].cells[alpha.column-1];
 			
-			if (td.style.color=='black' && td.style.background=='black') {
+			if (td.style.color=='white' && td.style.background=='white') {
 				count.innerText = ++count.innerText;
 			}			
 			
