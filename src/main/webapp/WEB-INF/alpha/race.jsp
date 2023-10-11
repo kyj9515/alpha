@@ -11,14 +11,13 @@
 	border-collapse: collapse;
 	font-family: monospace;
 	font-size: 1.5em;
-	background-color: red;
-	background-image: url('/img/BackgroundFront.png'), url('/img/BackgroundBack.png');
-	background-size: 100%;
+	background-image: url('/media/alpha.png');
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 #surface td {
-	opacity: 0.7;
+	opacity: 0.4;
 }
 
 #startBtn {
@@ -166,7 +165,7 @@ section > table {
 		<tr>
 		<c:forEach var="j" begin="0" end="${surface.get(i).size()-1}">
 			<c:set var="alpha" value="${surface[i][j]}"/>
-			<td style="color: black; background: black;">${alpha.ch}</td>
+			<td style="color: white; background: white;">${alpha.ch}</td>
 		</c:forEach>
 		</tr>
 	</c:forEach>

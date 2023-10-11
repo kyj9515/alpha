@@ -6,18 +6,18 @@
 <head>
 <meta charset="UTF-8">
 <title>fill.jsp</title>
-<style type="text/css">
+<style type="text/css"> 
 #surface {
 	border-collapse: collapse;
 	font-family: monospace;
 	font-size: 2em;
- 	border-left: 20px solid red;
 	background: url('/media/alpha.png');
 	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 #surface td {
-	opacity: 0.5;
+ 	opacity: 0.2; 
 }
 
 </style>

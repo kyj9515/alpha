@@ -11,9 +11,9 @@
 	border-collapse: collapse;
 	font-family: monospace;
 	font-size: 1.5em;
- 	border-left: 20px solid red;
 	background: url('/media/alpha.png');
 	background-repeat: no-repeat;
+	background-size: cover;
 	
 }
 

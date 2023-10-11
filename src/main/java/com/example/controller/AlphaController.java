@@ -29,8 +29,8 @@ public class AlphaController {
 		for (var i=0; i<alphas.length; i++) {
 			for (var j=0; j<alphas[i].length; j++) {
 				alphas[i][j] = new Alpha();
-				alphas[i][j].setFg(Color.Black);
-				alphas[i][j].setBg(Color.Black);
+				alphas[i][j].setFg(Color.White);
+				alphas[i][j].setBg(Color.White);
 			}
 		}
 		model.addAttribute("surface", alphas);
@@ -82,5 +82,6 @@ public class AlphaController {
 	Alpha data() {
 		return new Alpha();
 	}
+	
 	
 }

@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>zigzag.jsp</title>
-<link rel="stylesheet" href="/css/zigzag.css"> 
+<link rel="stylesheet" href="/css/zigzag.css">
 <script type="text/javascript" src="/js/zigzag.js"></script>
 </head>
 <body>

@@ -21,7 +21,7 @@
 	width: 100%;
 	top: -16px;
 	left: -10px;
-	background: white;
+ 	background: white; 
 	height: 100px;
 /* 	border-bottom: 3px solid black; */
 }
