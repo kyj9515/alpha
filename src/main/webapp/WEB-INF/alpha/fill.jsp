@@ -105,7 +105,7 @@ function clearBtn_click(e) {
 <button id="start" onclick="startBtn_click(event);">Start</button>
 <button id="clear" onclick="clearBtn_click(event);">Clear</button>
 <hr>
-<table border="1" width="500">
+<table border="1" width="500" style="background: white;">
 	<thead>
 	<tr>
 		<th>forCount</th><th>count</th><th>seconds</th>

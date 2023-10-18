@@ -134,7 +134,7 @@ section > table {
 <h1>Ajax => fetch 활용</h1>
 <button id="startBtn">Start</button>
 <hr>
-<table border="1" width="400">
+<table border="1" width="400" style="background: white;">
 	<thead>
 		<tr>
 		<th>roundCount</th><th>count</th><th>ellipse</th>
@@ -150,7 +150,7 @@ section > table {
 </table>
 <hr>
 <section>
-<table id="stat" width="400" border="1">
+<table id="stat" width="400" border="1" style="background: white;">
 	<thead>
 		<tr>
 			<th>no</th><th>alpha</th><th>Round Count</th>

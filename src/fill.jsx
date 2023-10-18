@@ -119,7 +119,7 @@ class App extends React.Component {
 			<>
 			<button disabled={this.state.disabled} onClick={event => this.btnCreate_click(event)}>Start</button>
 			<hr/>
-			<table border={1}>
+			<table border={1} id='count'>
 				<thead>
 					<tr>
 						<th>forCount</th>
