@@ -100,7 +100,7 @@ function clearBtn_click(e) {
 </script>
 </head>
 <body>
-<h1>Spring MVC + XMLHttpRequest</h1>
+<h1 style="color: white;">FIll</h1>
 <hr>
 <button id="start" onclick="startBtn_click(event);">Start</button>
 <button id="clear" onclick="clearBtn_click(event);">Clear</button>

@@ -81,7 +81,7 @@ window.onload = function() {
 </script>
 </head>
 <body>
-<h1 id="heading">1. Country List</h1>
+<h1 id="heading" style="color: white;">1. Country List</h1>
 <hr>
 <form action="/country/list">
 <select name="continent">

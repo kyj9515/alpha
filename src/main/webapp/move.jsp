@@ -10,7 +10,7 @@
 <script type="text/javascript" src="/webjars/jquery/jquery.js"></script>
 </head>
 <body>
-<h1>Move</h1>
+<h1 style="color: white;">Move</h1>
 <hr>
 <section id="root"></section>
 </body>

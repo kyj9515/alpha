@@ -92,7 +92,7 @@ body {
 </style>
 </head>
 <body>
-<h1>CSS 3D 응용 큐브 만들기</h1>
+<h1 style="color: white;">CSS 3D 응용 큐브 만들기</h1>
 <hr>
 <section class="perspective">
 	<article class="cube">

@@ -123,7 +123,7 @@ window.onload = function() {
 </script>
 </head>
 <body>
-<h1>Ajax => fetch 활용</h1>
+<h1 style="color: white;">Ajax => fetch 활용</h1>
 <hr>
 <button id="startBtn">Start</button>
 <hr>

@@ -103,7 +103,7 @@ window.onload = () => {
 </script>
 </head>
 <body>
-<h1>async/await + class</h1>
+<h1 style="color: white;">Corss</h1>
 <hr>
 <button id="createBtn">Create</button>
 <hr>

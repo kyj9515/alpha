@@ -9,7 +9,7 @@
 <script type="module" src="/js/react/fill.js"></script>
 </head>
 <body>
-<h1>Fill</h1>
+<h1 style="color: white;">Fill</h1>
 <hr>
 <section id="root"></section>
 </body>

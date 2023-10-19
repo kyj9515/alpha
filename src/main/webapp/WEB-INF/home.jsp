@@ -204,7 +204,7 @@ $(document).ready(function() {
 </nav>
 <iframe 
 		 name="content" 
-		 width="105%"
+		 width="100%"
 		 scrolling="no"
 		 frameborder='0'
 		 sendbox="allow-same-origin"

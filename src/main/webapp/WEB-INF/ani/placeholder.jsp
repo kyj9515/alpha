@@ -40,17 +40,32 @@ $(function(){
 			let height = parseInt(Math.random()*10 + 1) * 10;		
 			return `http://via.placeholder.com/\${width}X\${height}/\${bg}/\${fg}`;
 		}
+		
+		
 	})
 	.css('border', '1px solid red')
 	.css('margin', 10)
-	.css('animation', function(i) {
-		return 'rotate4 10s infinite linear' 
-	})
 	.css('opacity', 0.8)
+	.css('animation', 'rotate 3s infinite linear')
 });
 
- 
 
+</script>
+<style type="text/css">
+@keyframes rotate {
+	from {
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+	
+	50% {
+		transform: rotateX(360deg) rotateY(0deg);
+	}
+	
+	to {
+		transform: rotateX(0deg) rotateY(360deg);
+	}
+}
+</style>
 
 </script>
 </head>

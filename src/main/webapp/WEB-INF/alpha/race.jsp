@@ -131,7 +131,7 @@ section > table {
 </style>
 </head>
 <body>
-<h1>Ajax => fetch 활용</h1>
+<h1 style="color: white;">Ajax => fetch 활용</h1>
 <button id="startBtn">Start</button>
 <hr>
 <table border="1" width="400" style="background: white;">

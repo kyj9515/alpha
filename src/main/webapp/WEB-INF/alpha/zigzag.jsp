@@ -10,7 +10,7 @@
 <script type="text/javascript" src="/js/zigzag.js"></script>
 </head>
 <body>
-<h1>external javascript, css로 만들기(zigzag.js/zigzag.css)</h1>
+<h1 style="color: white;">external javascript, css로 만들기(zigzag.js/zigzag.css)</h1>
 <hr>
 <button id="btnCreate">Create</button>
 <hr>

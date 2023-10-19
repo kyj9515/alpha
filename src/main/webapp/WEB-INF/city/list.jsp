@@ -8,7 +8,7 @@
 <title>list.jsp</title>
 </head>
 <body>
-<h1>City List</h1>
+<h1 style="color: white;">City List</h1>
 <hr>
 <form action="/city/list">
 <select name="code">
