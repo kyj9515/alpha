@@ -43,7 +43,13 @@ $(function(){
 	})
 	.css('border', '1px solid red')
 	.css('margin', 10)
+	.css('animation', function(i) {
+		return 'rotate4 10s infinite linear' 
+	})
+	.css('opacity', 0.8)
 });
+
+ 
 
 
 </script>

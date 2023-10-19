@@ -88,12 +88,12 @@ iframe {
 }
 
 body {
-	background: url("/media/cat.jpg") no-repeat center;
 	background-size: cover;
 }
 
 
 </style>
+<link rel="stylesheet" href="/css/style.css">
 <script type="text/javascript" src="/webjars/jquery/jquery.js"></script>
 <script type="text/javascript"> 
 function resize() {
@@ -101,9 +101,30 @@ function resize() {
 	iframe.style.height = getComputedStyle(iframe.contentDocument.documentElement).height;
 }
 
-// window.onload = function() {
-// 	setInterval(resize, 100);	
-// }
+window.onload = function() {
+let star = document.querySelector('#star')
+let star1 = document.querySelector('#star1')
+let star2 = document.querySelector('#star2')
+let star3 = document.querySelector('#star3')
+
+setInterval(function() {
+	star.style.top = parseInt(Math.random()*500) + 'px';
+	star.style.left = parseInt(Math.random()*1700 + 10) + 'px';
+  
+}, 1500);
+setInterval(function() {
+	star1.style.top = parseInt(Math.random()*500) + 'px';
+	star1.style.left = parseInt(Math.random()*1700 + 10) + 'px';
+}, 1700);
+setInterval(function() {
+	star2.style.top = parseInt(Math.random()*500) + 'px';
+	star2.style.left = parseInt(Math.random()*1700 + 10) + 'px';
+}, 1600);
+setInterval(function() {
+	star3.style.top = parseInt(Math.random()*500) + 'px';
+	star3.style.left = parseInt(Math.random()*1700 + 10) + 'px';
+}, 1800);
+}
 
 $(document).ready(function() {
 	setInterval(resize, 100);
@@ -111,10 +132,14 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
+<span class="star" id="star"></span>
+<span class="star pink" id="star1"></span>
+<span class="star blue" id="star2"></span>
+<span class="star yellow" id="star3"></span>
 <nav>
 <ul class="menu">
 	<li style="padding: 0px 20px; margin-top: 20px;">
-		<section class="perspective">
+		<section class="perspective" onclick="http://localhost:8088">
 		<article class="cube">
 			<div class="base">Base</div>
 			<div class="base front">Front</div>
@@ -123,6 +148,7 @@ $(document).ready(function() {
 			<div class="base right">Right</div>
 			<div class="base top">Top</div>
 			<div class="base bottom">Bottom</div>
+			 
 		</article>
 		</section>
 	</li>
@@ -177,7 +203,7 @@ $(document).ready(function() {
 	</li>
 </ul>
 </nav>
-<iframe src="/alpha/fill" 
+<iframe 
 		 name="content" 
 		 width="105%"
 		 scrolling="no"
