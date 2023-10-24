@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +31,7 @@
 /* 	min-width: 150px; */
 	margin-top: 20px;
 	opacity: 0.75;
-	width: 270px;
+	width: 240px;
 	flex-shrink: 0;
 	background: black;
 	color: white;
@@ -48,9 +49,11 @@
 	transition: max-height 1s;
 }
 
-.menu-item:last-child {
+.menu-item:nth-last-child(1) {
+	margin-right: 30px;
+}
+.menu-item:nth-last-child(2) {
 	margin-left: auto;
-	margin-right: 50px;
 }
 
 .menu-title {
@@ -73,6 +76,11 @@
 	display: block;
 	padding: 10px;
 	font-size: 12pt;
+	text-decoration: none;
+	color: white;
+}
+
+.menu-title > a {
 	text-decoration: none;
 	color: white;
 }
@@ -197,9 +205,30 @@ $(document).ready(function() {
 			<li class="sub-menu-item"><a target="content" href="/search">search</a></li>
 		</ol>
 	</li>
+	<sec:authorize access="isAnonymous()">
 	<li class="menu-item">
-		<div class="menu-title">Login</div>
+		<div class="menu-title">
+		 <a href="/login">Login</a>
+		</div>
 	</li>
+	<li class="menu-item">
+		<div class="menu-title">
+		 <a href="/join">Join</a>
+		</div>
+	</li>
+	</sec:authorize>
+	<sec:authorize access="isAuthenticated()">
+	<li class="menu-item">
+		<div class="menu-title">
+		 <a href="/logout">Logout</a>
+		</div>
+	</li>
+	<li class="menu-item">
+		<div class="menu-title">
+		 <a href="#"><sec:authentication property="name"/></a>
+		</div>
+	</li>
+	</sec:authorize>
 </ul>
 </nav>
 <iframe 
