@@ -30,4 +30,3 @@ public class SequrityConfig {
 		return http.build();
 	}
 }
-
