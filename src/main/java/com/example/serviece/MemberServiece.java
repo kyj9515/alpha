@@ -1,5 +1,6 @@
 package com.example.serviece;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;
@@ -8,6 +9,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import com.example.mapper.MemberMapper;
 
 @Service
 public class MemberServiece implements UserDetailsService {
@@ -32,16 +35,25 @@ public class MemberServiece implements UserDetailsService {
 		
 	}
 
-	@Override
-	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		
-		if (!username.equals("alpha"))
-			throw new UsernameNotFoundException(username + "Not Found");
-		
-		var auth = AuthorityUtils.createAuthorityList("USER");
-		var user = new User(username, "1234", auth);
-		
-		return user;
-	}
+	  @Autowired
+	    MemberMapper mapper;
+
+	    @Override
+	    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+	        var member = mapper.selectById(username);
+
+	        if (member == null)
+	            throw new UsernameNotFoundException(username + " Not Found");
+
+	        var auth = AuthorityUtils.createAuthorityList(member.getRoles());
+	        var user = new User(member.getId(), member.getPassword(), auth);
+
+	        return user;
+
+	    }
+
+	
+	
+
 
 }
