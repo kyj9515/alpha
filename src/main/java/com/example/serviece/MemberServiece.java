@@ -35,7 +35,7 @@ public class MemberServiece implements UserDetailsService {
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		
-		if (!username.equals("python"))
+		if (!username.equals("alpha"))
 			throw new UsernameNotFoundException(username + "Not Found");
 		
 		var auth = AuthorityUtils.createAuthorityList("USER");
