@@ -27,9 +27,9 @@ class List extends React.Component {
 	render() {
 		return (
 			<>
-			<h1>부서 목록</h1>
+			<h1>부서 목록</h1> 
 			<hr/>
-			<Link to='/rest/dept/Insert'>추가</Link>
+			<Link to='/rest/dept/Insert' id='link'>추가</Link>
 			<table border={1}>
 				<thead>
 					<tr>
@@ -47,8 +47,8 @@ class List extends React.Component {
 							<td>{dept.deptno}</td>
 							<td>{dept.dname}</td>
 							<td>{dept.loc}</td>
-							<td><Link to='/rest/dept/Update'>수정</Link></td>
-							<td><Link to='/rest/dept/Delete'>삭제</Link></td>
+							<td><Link to='/rest/dept/Update' id="link">수정</Link></td>
+							<td><Link to='/rest/dept/Delete' id="link">삭제</Link></td>
 						</tr>
 					)
 				}

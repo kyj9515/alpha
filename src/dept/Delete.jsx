@@ -8,7 +8,7 @@ class Delete extends React.Component {
 			<>
 			<h1>부서 삭제</h1>
 			<hr/>
-			<Link to='/rest/dept'>목록으로 이동</Link>
+			<Link to='/rest/dept' id="link">목록으로 이동</Link>
 			<hr/>
 			
 			</>

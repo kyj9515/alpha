@@ -1,9 +1,15 @@
+h1 {
+	color: white;
+}
 
-
+#link {
+	 color: blue; 
+}
 table {
 	width: 800px;
 	margin: auto;
 	border-collapse: collapse;
+	color: white;
 	
 }
 
@@ -28,4 +34,8 @@ fieldset {
 input {
 	padding: 10px;
 	
+}
+
+legend {
+	color: white;
 }
