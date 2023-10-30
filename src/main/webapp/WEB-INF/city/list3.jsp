@@ -24,7 +24,7 @@ window.onload = function() {
 <hr>
 <form action="/city/list">
 <fieldset>
-	<legend>code</legend>
+	<legend style="color: white;">code</legend>
 	<input name="code" value="${param.code}" type="search" list="codes">
 	<datalist id="codes">
 	<c:forEach var="c" items="${codes}">
@@ -33,14 +33,14 @@ window.onload = function() {
 	</datalist>
 </fieldset>
 <fieldset>
-	<legend>population</legend>
+	<legend style="color: white;">population</legend>
 	<input type="range" min="0" max="10000000" step="100000" name="population" id="population" value="${empty param.population ? 0 : param.population}">
-	<label><span id="pop_value"></span>이상</label>
+	<label style="color: white;"><span id="pop_value"></span>이상</label>
 </fieldset>
 <input type="submit" value="도시검색">
 </form>
 <hr>
-<table border="1" style="background: white;">
+<table border="1" style="color: white;">
 	<thead>
 		<tr>
 			<th>no</th>

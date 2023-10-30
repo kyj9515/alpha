@@ -26,9 +26,6 @@ td {
 table td {
 	text-decoration: underline;
 }
-tbody > tr:hover {
- 	background: blue; 
-}
 
 
 </style>
@@ -110,7 +107,7 @@ window.onload = function() {
 <input type="submit" value="조회">
 </form>
 <hr>
-<table border="1" style="background: white;">
+<table border="1" style="color: white;"">
 	<thead>
 		<tr>
 			<th>no</th>
@@ -131,7 +128,7 @@ window.onload = function() {
 			<th>code2</th>
 		</tr>
 	</thead>
-	<tbody>
+	<tbody  id="xxx">
 	<c:forEach var="c" items="${list}" varStatus="status">
 		<tr>
 			<td>${status.count}</td>

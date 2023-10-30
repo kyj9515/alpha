@@ -36,7 +36,7 @@
 	<input type="submit" value="직원검색">
 </form>
 <hr>
-<table border="1" width="800" style="background-color: white;">
+<table border="1" width="800" style="color: white;">
 	<thead>
 		<tr>
 			<th>empno</th>

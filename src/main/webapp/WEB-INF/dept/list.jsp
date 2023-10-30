@@ -15,7 +15,7 @@
 	<input type="submit" value="부서검색">
 </form>
 <hr>
-<table border="1" width="500" style="background: white;">
+<table border="1" width="500" style="color: white;">
 	<thead>
 		<tr>
 			<th>deptno</th>

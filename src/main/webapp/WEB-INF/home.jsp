@@ -167,15 +167,12 @@ $(document).ready(function() {
 			<li class="sub-menu-item"><a target="content" href="/alpha/cross">cross</a></li>
 			<li class="sub-menu-item"><a target="content" href="/alpha/race">race</a></li>
 			<li class="sub-menu-item"><a target="content" href="/alpha/zigzag">zigzag</a></li>
-			<li class="sub-menu-item"><a target="content" href="/alpha/earthwrom">earthworm</a></li>
 		</ol>
 	</li>
 	<li class="menu-item">
 		<div class="menu-title">Animation</div>
 		<ol class="sub-menu">
 			<li class="sub-menu-item"><a target="content" href="/ani/fill">fill</a></li>
-			<li class="sub-menu-item"><a target="content" href="/ani/cross">cross</a></li>
-			<li class="sub-menu-item"><a target="content" href="/ani/race">race</a></li>
 			<li class="sub-menu-item"><a target="content" href="/ani/cube">cube</a></li>
 			<li class="sub-menu-item"><a target="content" href="/ani/placeholder">placeholder</a></li>
 		</ol>
@@ -196,7 +193,6 @@ $(document).ready(function() {
 		<ol class="sub-menu">
 			<li class="sub-menu-item"><a target="content" href="/dept/list">dept</a></li>
 			<li class="sub-menu-item"><a target="content" href="/emp/list">emp</a></li>
-			<li class="sub-menu-item"><a target="content" href="/salgrade/list">salgrade</a></li>
 		</ol>
 	</li>
 	<li class="menu-item">
@@ -204,8 +200,6 @@ $(document).ready(function() {
 		<ol class="sub-menu">
 			<li class="sub-menu-item"><a target="content" href="/city/list">city</a></li>
 			<li class="sub-menu-item"><a target="content" href="/country/list">country</a></li>
-			<li class="sub-menu-item"><a target="content" href="/language/list">language</a></li>
-			<li class="sub-menu-item"><a target="content" href="/search">search</a></li>
 		</ol>
 	</li>
 	<sec:authorize access="isAnonymous()">
