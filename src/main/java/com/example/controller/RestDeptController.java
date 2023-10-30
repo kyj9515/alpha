@@ -81,10 +81,12 @@ public class RestDeptController {
 	         body.put("data", dept);
 	         response = new ResponseEntity<Object>(body, HttpStatus.OK);
 	    } catch (Exception e) {
-	         body.put("result", "error");
-	         body.put("message", e.getMessage());
-	         response = new ResponseEntity<Object>(body, HttpStatus.INTERNAL_SERVER_ERROR);
-	    }
+            body.put("result", "error");
+            body.put("message", "서버 에러입니다.");
+            response = new ResponseEntity<Object>(body, HttpStatus.INTERNAL_SERVER_ERROR);
+            e.printStackTrace();
+            System.out.println(e.getClass().getName());
+        }
 		
 		return response;
 	}

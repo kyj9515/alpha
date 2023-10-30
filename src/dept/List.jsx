@@ -47,8 +47,8 @@ class List extends React.Component {
 							<td>{dept.deptno}</td>
 							<td>{dept.dname}</td>
 							<td>{dept.loc}</td>
-							<td><Link to='/rest/dept/Update' id="link">수정</Link></td>
-							<td><Link to='/rest/dept/Delete' id="link">삭제</Link></td>
+							<td><Link to='/rest/dept/update' state={{dept: dept}} id="link">수정</Link></td>
+							<td><Link to='/rest/dept/delete' state={{dept: dept}} id="link">삭제</Link></td>
 						</tr>
 					)
 				}
